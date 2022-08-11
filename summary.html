@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title> Summary - Web Portfolio </title>
+      <!-- Animate With CSS -->
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+      <!-- Font Awesome KIT -->
+      <link href="fontawesome-kit-5/css/all.css" rel="stylesheet">
+      <link href="fontawesome-kit-5/css/fontawesome.css" rel="stylesheet">
+      <link href="fontawesome-kit-5/css/brands.css" rel="stylesheet">
+      <link href="fontawesome-kit-5/css/solid.css" rel="stylesheet">
+      <script defer src="fontawesome-kit-5/js/all.js"></script>
+      <script defer src="fontawesome-kit-5/js/brands.js"></script>
+      <script defer src="fontawesome-kit-5/js/solid.js"></script>
+      <script defer src="fontawesome-kit-5/js/fontawesome.js"></script>
+      <!-- Slick CSS -->
+      <link href="css/slick.css" rel="stylesheet">
+      <link href="css/slick-theme.css" rel="stylesheet">
+      <!-- Bootstrap Grids -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom Stylings -->
+      <link href="css/custom.css" rel="stylesheet">
+      <!-- Jquery Library -->
+      <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+   </head>
+   <body class="bg-blue1">
+      <!-- Header Section Starts Here -->
+      <header>
+         <div class="container">
+            <div class="header-row">
+               <div class="logo">
+                  <a href=""> <img src="images/logo.svg"> </a>      
+               </div>
+               <div class="navbar-custom">
+                  <div class="menu-item">
+                     <a href=""> Summary </a>      
+                  </div>
+                  <div class="menu-item">
+                     <a href=""> Positions </a>      
+                  </div>
+                  <div class="menu-item">
+                     <a href=""> Trending </a>      
+                  </div>
+               </div>
+               <div class="header-right">
+                  <div class="navbar-handler">
+                     <button type="button" class="navbar-trigger"> <img src="images/hamburger.png"> </button>
+                  </div>
+                  <div class="settings-dropdown">
+                     <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/settings-icon.svg">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                           <div class="block-element2">   
+                              <a href="" class="textual-btn1"> dyian@w3bportfolio.com </a>
+                              <a href="" class="custom-btn1 m-b-15 m-t-15"> <img src="images/plus-icon.svg"> Add Wallet </a>
+                           </div>
+                           <div class="list-profile">
+                              <h5> My Profile </h5>
+                              <a href=""> Manage Subscriptions </a>
+                              <h5> Security & Privacy </h5>
+                              <a href=""> Access </a>
+                              <h5> Networks </h5>
+                              <a href=""> Supported Platforms </a>
+                           </div>
+                           <div class="block-element2 m-t-20">
+                              <a href="" class="textual-btn2"> Sign out </a>   
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Header Section Ends Here --> 
+      <!-- Content Section Starts Here -->
+      <section class="pad-top-40 m-b-30">
+         <div class="container">
+            <div class="block-element">
+               <div class="row custom-row1">
+                  <div class="col-md-4 col-lg-4 col-sm-4 col-12 custom-pad1">
+                     <div class="price-box">
+                        <h6> Current Balance </h6>
+                        <h4> 
+                           <b class="col-white"> $802.17 </b> 
+                           <span class="col-white"> <img src="images/arrow-high.svg"> 0.00% </span>
+                        </h4>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-lg-4 col-sm-4 col-12 custom-pad1">
+                     <div class="price-box">
+                        <h6> Buying Power </h6>
+                        <h4> 
+                           <b class="col-white"> $802.17 </b> 
+                           <span class="col-white"> <img src="images/arrow-high.svg">  0.00% </span>
+                        </h4>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-lg-4 col-sm-4 col-12 custom-pad1">
+                     <div class="price-box">
+                        <h6> 24hr Change </h6>
+                        <h4> 
+                           <b class="col-white"> $102.58 </b> 
+                           <span class="col-white"> <img src="images/arrow-down.svg"> 0.00% </span>
+                        </h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Content Section Ends Here -->
+      <!-- Content Section Starts Here -->
+      <section class="pad-bot-40">
+         <div class="container">
+            <div class="block-element m-b-30">
+               <div class="chart-wrapper">
+                  <div class="block-element m-b-40">
+                     <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-12">
+                           <div class="chart-head">
+                              <h5 class="col-white"> Asset Location </h5>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="block-element">
+                     <div class="chart-2">
+                        <canvas id="donutchart"></canvas>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="block-element">
+               <div class="chart-wrapper">
+                  <div class="block-element m-b-40">
+                     <div class="row">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-12">
+                           <div class="chart-head">
+                              <h5 class="col-white"> Balance History </h5>
+                           </div>
+                        </div>
+                        <div class="col-md-8 col-lg-8 col-sm-12 col-12">
+                           <div class="all-filters">
+                              <button class="filter-btn1"> All </button>  
+                              <button class="filter-btn2"> 1hr </button>  
+                              <button class="filter-btn2"> day </button>  
+                              <button class="filter-btn2"> week </button>  
+                              <select class="filter-btn3">
+                                 <option> More view options </option>
+                                 <option> More view options </option>
+                                 <option> More view options </option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="block-element">
+                     <div class="chart-1">
+                        <div >
+                           <div class="chartjs-size-monitor">
+                              <div class="chartjs-size-monitor-expand">
+                                 <div class=""></div>
+                              </div>
+                              <div class="chartjs-size-monitor-shrink">
+                                 <div class=""></div>
+                              </div>
+                           </div>
+                           <canvas id="canvas"   width="1379" height="689" class="chartjs-render-monitor"></canvas>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Content Section Ends Here -->
+      <!-- Bootstrap Javascript -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"> </script>
+      <script src="js/functions.js"> </script>
+      <!-- Slick Slider -->
+      <script src="js/slick-slider.js"> </script>
+      <script src="js/slick-functions.js"> </script>
+      <script src="js/chart.js"></script>
+      <!-- Line Chart Create -->
+      <script type="text/javascript">
+         var config = {
+          type: 'line',
+          data: {
+             labels: ['June-06', 'June-07', 'June-08', 'June-09', 'June-10'],
+             datasets: [{
+               
+                 
+                borderColor: "#99EE4B",
+                fill: false,
+                data: [
+                   422,
+                   420,
+                  426,
+                   420,
+                   416,
+                   420,
+                   420,
+                   420,
+                   426,
+                   420,
+                   416,
+                   426,
+                   426
+         
+                ],
+                color: "#ffffff" ,
+          
+             }]
+          },
+          options: {
+         
+         
+              legend: {
+                display: true,
+                fontColor: "#fff",
+                color: "#fff",
+             },
+             responsive: true,
+             
+             scales: {
+                xAxes: [{
+         
+         
+                   display: true,
+              scaleLabel: {
+               
+                display: true,
+                
+                labelString: 'Date'
+              },
+             
+                }],
+                yAxes: [{
+                   display: true,
+                   //type: 'logarithmic',
+              scaleLabel: {
+                         display: true,
+                         labelString: 'Index Returns'
+                      },
+                      ticks: {
+                         color: "#ffffff",
+                         min: 0,
+                         max: 500,
+         
+                         // forces step size to be 5 units
+                         stepSize: 50
+                      }
+                }]
+             }
+          }
+         };
+         
+         window.onload = function() {
+          var ctx = document.getElementById('canvas').getContext('2d');
+          window.myLine = new Chart(ctx, config);
+         };
+         
+         document.getElementById('randomizeData').addEventListener('click', function() {
+          config.data.datasets.forEach(function(dataset) {
+             dataset.data = dataset.data.map(function() {
+                return randomScalingFactor();
+             });
+         
+          });
+         
+          window.myLine.update();
+         });
+         
+          
+      </script>
+      <script type="text/javascript">
+
+ 
+         var ctx = document.getElementById("donutchart").getContext('2d');
+         var myChart = new Chart(ctx, {
+         type: 'doughnut',
+         data: {
+         labels: ["Bull #9233", "Bull #9222", "Bull #9256", "Bull #9244"],
+         datasets: [{
+         backgroundColor: [
+         "#D582FC",
+         "#E813D2",
+         "#FFF500",
+         "#99EE4B"
+         ],
+         data: [24.3, 24.3, 25, 24.3]
+         }]
+         },
+         plugins: {
+            legend: {
+               position: "right",
+               align: "center",
+               fontColor: "#ffffff",
+                display: true,
+                 labels: {
+                    color: 'rgb(255, 99, 132)'
+                }
+                
+            }
+         }
+         
+         });
+      </script>
+   </body>
+</html>
